@@ -53,7 +53,7 @@ fileToAnalyse.each {
 			type: "issue",
 			check_name: errTag.@ruleset,
 			content: "For more info, ${errTag.@externalInfoUrl}",
-			description: errTag.text(),
+			description: errTag.text().trim(),
 			categories: [ "Style" ],
 			location: [
 				path: it.replace(codeFolder.path, '').substring(1),
