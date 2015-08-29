@@ -1,16 +1,18 @@
-# codeclimate-checkstyle
-A code climate engine for running checkstyle on your java projects.
+# codeclimate-pmd
+A code climate engine for running pmd on your java projects.
 
 ### Sample .codeclimate.yml configuration
 ```yaml
 engines:
-  checkstyle:
+  pmd:
     enabled: true
-    config: 'config/checkstyle/checkstyle.xml'
+    config: 'config/pmd/pmd.xml'
 ```
 
-By default the engine runs the [code climate checker](https://github.com/sivakumar-kailasam/codeclimate-checkstyle/blob/master/config/codeclimate_checkstyle.xml) against your code if the config property is not defined
+By default the engine runs the [code climate checker](https://github.com/sivakumar-kailasam/codeclimate-pmd/blob/master/config/codeclimate_pmd.xml) against your code if the config property is not defined
 
 
 ### Testing the checker
 Run `./tests/spec_for_checker` which uses a [fixture project](https://github.com/sivakumar-kailasam/fixture_code_base) for running tests against the checker
+
+To know more about different PMD rules visit [the PMD rulesets index](http://pmd.github.io/pmd-5.3.3/pmd-java/rules/index.html)
