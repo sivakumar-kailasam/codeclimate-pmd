@@ -6,10 +6,11 @@
 		"email": "sivakumar.ur.friend@gmail.com"
 	},
 	"languages": [
-		"java"
+		"Java"
 	],
 	"test_paths": [
 		"tests/spec_for_checker"
 	],
-	"version": "1.0.0"
+	"version": "1.0.0",
+	"spec_version": "0.0.1"
 }
