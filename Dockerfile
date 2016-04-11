@@ -4,10 +4,10 @@ MAINTAINER Sivakumar Kailasam
 
 # Groovy setup, defined multiple RUN steps for better caching resulting in quicker builds
 RUN cd /tmp 
-RUN wget http://dl.bintray.com/groovy/maven/groovy-binary-2.4.0-beta-4.zip 
-RUN unzip groovy-binary-2.4.0-beta-4.zip 
-RUN mv groovy-2.4.0-beta-4 /groovy 
-RUN rm groovy-binary-2.4.0-beta-4.zip
+RUN wget http://dl.bintray.com/groovy/maven/groovy-binary-2.4.6.zip 
+RUN unzip groovy-binary-2.4.6.zip 
+RUN mv groovy-2.4.6 /groovy 
+RUN rm groovy-binary-2.4.6.zip
 
 # Set Groovy path
 ENV GROOVY_HOME /groovy
