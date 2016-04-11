@@ -1,0 +1,15 @@
+{
+	"name": "pmd",
+	"description": "Run your PMD checks",
+	"maintainer": {
+		"name": "Sivakumar Kailasam",
+		"email": "sivakumar.ur.friend@gmail.com"
+	},
+	"languages": [
+		"java"
+	],
+	"test_paths": [
+		"tests/spec_for_checker"
+	],
+	"version": "1.0.0"
+}
