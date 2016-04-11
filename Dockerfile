@@ -1,4 +1,4 @@
-FROM java
+FROM anapsix/alpine-java
 
 MAINTAINER Sivakumar Kailasam 
 
@@ -13,8 +13,8 @@ RUN rm apache-groovy-binary-2.4.6.zip
 ENV GROOVY_HOME /groovy
 ENV PATH $GROOVY_HOME/bin/:$PATH
 
-RUN groupadd app -g 9000
-RUN useradd -u 9000 -g 9000 -r -s /bin/false app 
+RUN addgroup app -g 9000
+RUN adduser -u 9000 -g 9000 -S -s /bin/false app 
 
 # Codeclimate specific setup
 VOLUME /code
