@@ -17,7 +17,7 @@ def codeFolder = new File(appContext.codeFolder)
 assert codeFolder.exists()
 
 
-def excludeString = ".codeclimate.yml " + configJson.exclude_paths.join(" ") 
+def excludeString = ".codeclimate.yml " + configJson.exclude_paths?.join(" ") 
 
 
 def scriptDir = getClass().protectionDomain.codeSource.location.path.replace("/${this.class.name}.groovy","")

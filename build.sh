@@ -1,1 +1,1 @@
-docker build -t codeclimate/pmd .
+docker build -t codeclimate/codeclimate-pmd .
