@@ -51,7 +51,6 @@
    <rule ref="rulesets/java/controversial.xml/AvoidUsingNativeCode"/>
    <rule ref="rulesets/java/controversial.xml/AvoidUsingShortType"/>
    <rule ref="rulesets/java/controversial.xml/AvoidUsingVolatile"/>
-   <rule ref="rulesets/java/controversial.xml/BooleanInversion"/>
    <rule ref="rulesets/java/controversial.xml/DoNotCallGarbageCollectionExplicitly"/>
    <rule ref="rulesets/java/controversial.xml/DontImportSun"/>
    <rule ref="rulesets/java/controversial.xml/OneDeclarationPerLine"/>
