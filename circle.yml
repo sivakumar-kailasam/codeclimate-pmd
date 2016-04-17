@@ -2,13 +2,14 @@ machine:
   environment:
       GROOVY_HOME: "~/groovy"
   java:
-    version: openjdk8
+    version: oraclejdk8
 
 dependencies:
   pre:
-      - (wget http://dl.bintray.com/groovy/maven/apache-groovy-binary-2.4.6.zip \ 
-        && unzip apache-groovy-binary-2.4.6.zip \
-        && mv groovy-2.4.6 ~/groovy && rm apache-groovy-binary-2.4.6.zip)
+      - wget http://dl.bintray.com/groovy/maven/apache-groovy-binary-2.4.6.zip  
+      - unzip apache-groovy-binary-2.4.6.zip 
+      - mv groovy-2.4.6 ~/groovy 
+      - rm apache-groovy-binary-2.4.6.zip
   
   cache_directories:
       - "~/groovy"
