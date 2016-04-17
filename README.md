@@ -16,3 +16,7 @@ By default the engine runs the [code climate checker](https://github.com/sivakum
 Run `./tests/spec_for_checker` which uses a [fixture project](https://github.com/sivakumar-kailasam/fixture_code_base) for running tests against the checker
 
 To know more about different PMD rules visit [the PMD rulesets index](http://pmd.github.io/pmd-5.3.3/pmd-java/rules/index.html)
+
+### Updating PMD
+- `cd bin`
+- `./updatePmd.groovy`

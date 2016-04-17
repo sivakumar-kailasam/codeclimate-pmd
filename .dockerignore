@@ -1,0 +1,7 @@
+tests
+build.sh
+*.md
+LICENSE
+*.groovy
+bin/updatePmd.groovy
+Dockerfile
