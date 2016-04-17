@@ -6,7 +6,13 @@
 		"email": "sivakumar.ur.friend@gmail.com"
 	},
 	"languages": [
-		"Java"
+		"Go",
+		"Java",
+		"JavaScript",
+		"PHP",
+		"Python", 
+		"Ruby",
+		"Scala"
 	],
 	"test_paths": [
 		"tests/spec_for_checker"
