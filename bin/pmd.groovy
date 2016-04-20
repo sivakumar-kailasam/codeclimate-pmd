@@ -18,7 +18,11 @@ assert codeFolder.exists()
 
 
 def excludeString = ".codeclimate.yml " + configJson.exclude_paths?.join(" ") 
+def includeString = configJson.include_paths?.join(" ")
 
+if (includeString == null) {
+   includeString = '**/*'
+}
 
 def scriptDir = getClass().protectionDomain.codeSource.location.path.replace("/${this.class.name}.groovy","")
 def checkerDefinitionFromConfig = configJson.config
@@ -30,8 +34,7 @@ if (configJson.config?.trim()) {
 }
 assert checkerDefinitionFile.exists() && checkerDefinitionFile.isFile()
 
-
-def fileToAnalyse = new FileNameFinder().getFileNames(appContext.codeFolder,'**/*', excludeString)
+def fileToAnalyse = new FileNameFinder().getFileNames(appContext.codeFolder, includeString, excludeString)
 
 fileToAnalyse.each {
 	def sout = new StringBuffer()

@@ -1,7 +1,6 @@
 {
     "enabled": true,
     "exclude_paths": [
-        "Library.java",
         "build.gradle",
         "config/",
         "folder_to_exclude/",
