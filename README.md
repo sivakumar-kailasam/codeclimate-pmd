@@ -1,6 +1,10 @@
 # codeclimate-pmd
 A code climate engine for running pmd on your java projects.
 
+### Running changes in local
+- `./build.sh`
+- go inside `tests/test_repo/fixture_code_base` and run `codeclimate analyse --dev` or `CODECLIMATE_DEBUG=1 codeclimate analyse --dev` for debug messages.
+
 ### Sample .codeclimate.yml configuration
 ```yaml
 engines:
