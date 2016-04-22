@@ -2,6 +2,7 @@
 A code climate engine for running pmd on your java projects.
 
 ### Running changes in local
+- `./tests/spec_for_checker`
 - `./build.sh`
 - go inside `tests/test_repo/fixture_code_base` and run `codeclimate analyse --dev` or `CODECLIMATE_DEBUG=1 codeclimate analyse --dev` for debug messages.
 
