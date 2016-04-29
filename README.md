@@ -25,3 +25,8 @@ To know more about different PMD rules visit [the PMD rulesets index](http://pmd
 ### Updating PMD
 - `cd bin`
 - `./updatePmd.groovy`
+
+### References
+- https://docs.codeclimate.com/docs/building-a-code-climate-engine
+- https://github.com/codeclimate/spec/blob/master/SPEC.md
+
