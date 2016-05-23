@@ -1,4 +1,4 @@
-FROM java
+FROM java:8-jre
 
 MAINTAINER Sivakumar Kailasam 
 
@@ -13,12 +13,7 @@ RUN cd /tmp && \
 ENV GROOVY_HOME /groovy
 ENV PATH $GROOVY_HOME/bin/:$PATH
 
-RUN groupadd app -g 9000 && useradd -g 9000 -u 9000 -r -s /bin/false app 
-
-
-#RUN apt-get remove -y ca-certificates curl wget bzr git mercurial openssh-client subversion procps bzip2 unzip xz-utils
-RUN apt-get remove -y curl wget bzr git mercurial openssh-client subversion bzip2 unzip xz-utils && \ 
-    apt-get autoremove -y
+RUN groupadd app -g 9000 && useradd -g 9000 -u 9000 -r -s /bin/false app
 
 # Codeclimate specific setup
 VOLUME /code

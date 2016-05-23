@@ -22,7 +22,7 @@ Run `./tests/spec_for_checker` which uses a [fixture project](https://github.com
 
 To know more about different PMD rules visit [the PMD rulesets index](http://pmd.github.io/pmd-5.4.1/pmd-java/rules/index.html)
 
-### Updating PMD
+### Updating PMD (to be used after 5.5.0 is officially released)
 - `cd bin`
 - `./updatePmd.groovy`
 

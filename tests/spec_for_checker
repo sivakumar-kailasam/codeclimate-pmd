@@ -79,7 +79,7 @@ def checker_givesCorrectResult_WhenDefaultConfigInputsArePassed() {
 	assert checker.exitValue() == 0
 	def lineCount = 0
 	checker.text.eachLine {++lineCount}
-	assert lineCount == 11
+	assert lineCount == 15
 	println "${SUCCESS} checker_givesCorrectResult_WhenDefaultConfigInputsArePassed"
 }
 
