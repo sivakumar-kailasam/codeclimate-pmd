@@ -38,7 +38,7 @@ assert checkerDefinitionFile.exists() && checkerDefinitionFile.isFile()
 
 def filesToAnalyse = new FileNameFinder().getFileNames(appContext.codeFolder, includeString).join(",")
 
-def pmdCommand = "${scriptDir}/pmd/bin/run.sh pmd -d ${filesToAnalyse} -f codeclimate -R ${checkerDefinitionFile} -l java -v 35 -failOnViolation false"
+def pmdCommand = "${scriptDir}/pmd/bin/run.sh pmd -d ${filesToAnalyse} -f codeclimate -R ${checkerDefinitionFile} -v 35 -failOnViolation false"
 
 ProcessBuilder builder = new ProcessBuilder(pmdCommand.split(' '))
 Process process = builder.start()
